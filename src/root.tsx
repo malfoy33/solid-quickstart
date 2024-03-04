@@ -23,16 +23,28 @@ export default function Root() {
         <Meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Body>
-        <Suspense>
-          <ErrorBoundary>
-            <A href="/">Index</A>
-            <A href="/about">About</A>
-            <Routes>
-              <FileRoutes />
-            </Routes>
-          </ErrorBoundary>
-        </Suspense>
-        <Scripts />
+                        <fieldset>
+                            <input id="e-item-1" class="radio-inline__input" type="radio" name="environment-radio" value="e-item-1"/>
+                            <label class="radio-inline__label" for="e-item-1">
+                                とても満足
+                            </label>
+                            <input id="e-item-2" class="radio-inline__input" type="radio" name="environment-radio" value="e-item-2"/>
+                            <label class="radio-inline__label" for="e-item-2">
+                                やや満足
+                            </label>
+                            <input id="e-item-3" class="radio-inline__input" type="radio" name="environment-radio" value="e-item-3"/>
+                            <label class="radio-inline__label" for="e-item-3">
+                                普通
+                            </label>
+                            <input id="e-item-4" class="radio-inline__input" type="radio" name="environment-radio" value="e-item-4"/>
+                            <label class="radio-inline__label" for="e-item-4">
+                                やや普通
+                            </label>
+                            <input id="e-item-5" class="radio-inline__input" type="radio" name="environment-radio" value="e-item-5"/>
+                            <label class="radio-inline__label" for="e-item-5">
+                                とても満足
+                            </label>
+                        </fieldset>
       </Body>
     </Html>
   );
